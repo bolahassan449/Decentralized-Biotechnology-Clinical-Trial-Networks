@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Biotechnology-Clinical-Trial-Networks'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.data-collection]
+path = 'contracts/data-collection.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.patient-recruitment]
+path = 'contracts/patient-recruitment.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
